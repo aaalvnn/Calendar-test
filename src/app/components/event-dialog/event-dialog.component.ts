@@ -26,12 +26,18 @@ export class EventDialogComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['eventData']) {
-      this.eventForm.patchValue(this.eventData || { title: '', date: '', venue: '' });
+      this.eventForm.patchValue(this.eventData || { id: '', title: '', date: '', venue: '' });
     }
   }
 
   onSave(): void {
-    this.saveEvent.emit(this.eventForm.value);
+    if (this.eventForm.value.id) {
+      this.saveEvent.emit(this.eventForm.value);
+    } else {
+      const newEvent = this.eventForm.value;
+      delete newEvent.id;  // Ensure id is not sent when creating a new event
+      this.saveEvent.emit(newEvent);
+    }
   }
 
   onDelete(): void {

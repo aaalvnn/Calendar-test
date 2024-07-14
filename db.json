@@ -1,155 +1,27 @@
 {
   "venues": [
     {
-      "id": "1",
-      "name": "Venue 1"
-    },
-    {
-      "id": "2",
-      "name": "Venue 2"
-    },
-    {
-      "id": "6143",
-      "name": "ававвав"
-    },
-    {
       "id": "bd5c",
       "name": "івівівіві"
     },
     {
       "id": "1c0f",
       "name": "dsdsdsdsdsdsdsdsd"
+    },
+    {
+      "id": "b814",
+      "name": "dsdsds12314134"
     }
   ],
   "exhibitions": [
     {
-      "id": "1",
-      "title": "Exhibition 1",
-      "date": "2024-07-20",
-      "venue": "1"
-    },
-    {
-      "id": "2",
+      "id": "1c0f",
       "title": "Exhibition 2",
       "date": "2024-07-21",
-      "venue": "2"
+      "venue": "dsdsdsdsdsdsdsdsd"
     },
     {
-      "id": "",
-      "title": "вівіві",
-      "date": "2024-07-06",
-      "venue": "вівів"
-    },
-    {
-      "id": "",
-      "title": "вівів",
-      "date": "2024-07-14",
-      "venue": ""
-    },
-    {
-      "id": "",
-      "title": "dsds",
-      "date": "2024-07-05",
-      "venue": "dsdsds"
-    },
-    {
-      "id": "",
-      "title": "dsdsd",
-      "date": "2024-07-09",
-      "venue": "dsdsds"
-    },
-    {
-      "id": "",
-      "title": "cdfsdsd",
-      "date": "2024-07-12",
-      "venue": ""
-    },
-    {
-      "id": "",
-      "title": "dsdsd",
-      "date": "2024-07-13",
-      "venue": "dsdsdsd"
-    },
-    {
-      "id": "",
-      "title": "dsds",
-      "date": "2024-07-12",
-      "venue": "dsds"
-    },
-    {
-      "id": "",
-      "title": "jnjds",
-      "date": "2024-07-14",
-      "venue": "dsfdgw12321312"
-    },
-    {
-      "id": "",
-      "title": "вівіві",
-      "date": "2024-07-03",
-      "venue": "вівівів"
-    },
-    {
-      "id": "",
-      "title": "dssds",
-      "date": "2024-07-03",
-      "venue": "1dsdsds"
-    },
-    {
-      "id": "",
-      "title": "dsdsdsd",
-      "date": "2024-07-19",
-      "venue": "61432232"
-    },
-    {
-      "id": "",
-      "title": "adadada",
-      "date": "2024-07-09",
-      "venue": "bd5cdadadsa"
-    },
-    {
-      "id": "",
-      "title": "dsdsds",
-      "date": "",
-      "venue": "1dsdsdsds"
-    },
-    {
-      "id": "",
-      "title": "dsdsds",
-      "date": "2024-07-27",
-      "venue": "1dsdsds"
-    },
-    {
-      "id": "",
-      "title": "dsdsds",
-      "date": "2024-07-11",
-      "venue": "6143fdfdfd"
-    },
-    {
-      "id": "",
-      "title": "dsdsd",
-      "date": "2024-07-17",
-      "venue": "6143dsdsds"
-    },
-    {
-      "id": "",
-      "title": "dsdsds",
-      "date": "2024-07-18",
-      "venue": "Venue 1"
-    },
-    {
-      "id": "",
-      "title": "dsdsdsd",
-      "date": "2024-07-24",
-      "venue": "2"
-    },
-    {
-      "id": "",
-      "title": "dsdsdsddsdsd",
-      "date": "2024-07-24",
-      "venue": "1"
-    },
-    {
-      "id": "",
+      "id": "26f7",
       "title": "dsdsdsdsds",
       "date": "2024-07-04",
       "venue": "1c0f"
