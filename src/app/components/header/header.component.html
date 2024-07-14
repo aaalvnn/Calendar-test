@@ -1,5 +1,7 @@
 <div class="flex items-center justify-between">
-  <app-dropdown></app-dropdown>
+    <select (change)="onVenueChange($event)">
+      <option *ngFor="let venue of venues" [value]="venue.id">{{ venue.name }}</option>
+    </select>
   <app-search></app-search>
   <div>
     <span class="text-orange-400">Параметри пошуку</span>

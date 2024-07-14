@@ -1,0 +1,13 @@
+<div class="modal-content">
+  <h2 class="modal-title">Add New Venue</h2>
+  <form [formGroup]="venueForm" (ngSubmit)="onSave()">
+    <div class="modal-body">
+      <label for="name">Venue Name</label>
+      <input id="name" type="text" formControlName="name" />
+    </div>
+    <div class="modal-footer">
+      <button type="button" (click)="router.navigate(['/'])">Cancel</button>
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</div>
