@@ -1,27 +1,76 @@
-# Untitled4
+# Exhibition Calendar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+Exhibition Calendar is an Angular application that displays a calendar of exhibitions. Users can add, edit, and delete exhibitions, and view them on a calendar based on the selected venue.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+- [Running Tests](#running-tests)
+- [Mock API](#mock-api)
+- [Technologies](#technologies)
+- [License](#license)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/aaalvnn/exhibition-calendar.git
+    cd exhibition-calendar
+    ```
 
-## Build
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Install JSON server globally:
+    ```sh
+    npm install -g json-server
+    ```
 
-## Running unit tests
+4. Start the JSON server:
+    ```sh
+    json-server --watch db.json --port 5000
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. Start the Angular application:
+    ```sh
+    ng serve
+    ```
 
-## Running end-to-end tests
+6. Open your browser and navigate to `http://localhost:4200`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
 
-## Further help
+- The main page displays a calendar with exhibitions.
+- Users can select a venue from the dropdown in the header.
+- Users can add new exhibitions by clicking the "Add Event" button.
+- Users can edit or delete existing exhibitions by clicking on them in the calendar.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## API
+
+The application uses a mock API served by JSON server. The API endpoints are:
+
+- `GET /exhibitions`: Retrieves a list of all exhibitions.
+- `POST /exhibitions`: Adds a new exhibition.
+- `PUT /exhibitions/:id`: Updates an existing exhibition.
+- `DELETE /exhibitions/:id`: Deletes an exhibition.
+
+### Exhibition Data Structure
+
+```json
+"venues": [
+    {
+      "id": "string",
+      "name": "string"
+    }],
+"exhibitions": [
+    {
+      "id": "string",
+      "title": "string",
+      "date": "string",
+      "venue": "string"
+  }], 
+
