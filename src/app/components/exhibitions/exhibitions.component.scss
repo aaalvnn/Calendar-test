@@ -1,0 +1,34 @@
+.fc-toolbar.fc-header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc-toolbar .fc-left,
+.fc-toolbar .fc-right {
+  display: flex;
+  align-items: center;
+}
+
+.fc-toolbar .fc-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.fc-toolbar .fc-left .fc-button-group {
+  display: flex;
+}
+
+.fc-toolbar .fc-right .fc-button-group {
+  display: flex;
+}
+
+::ng-deep .fc .fc-toolbar-title {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+::ng-deep .fc .fc-toolbar {
+  display: flex;
+  justify-content: center!important;
+}

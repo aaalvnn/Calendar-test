@@ -7,6 +7,8 @@ import {RightBarComponent} from "./components/right-bar/right-bar.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {ExhibitionsComponent} from "./components/exhibitions/exhibitions.component";
 import {FullCalendarModule} from "@fullcalendar/angular";
+import {DropdownComponent} from "./components/dropdown/dropdown.component";
+import {SearchComponent} from "./components/search/search.component";
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import {FullCalendarModule} from "@fullcalendar/angular";
     RightBarComponent,
     HeaderComponent,
     ExhibitionsComponent,
+    DropdownComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

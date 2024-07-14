@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import { Router, Event, NavigationEnd } from '@angular/router';
 import { IStaticMethods } from 'preline/preline';
 
+
+
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
