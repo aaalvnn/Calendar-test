@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent {
-  title = 'Calendar-test';
 }
