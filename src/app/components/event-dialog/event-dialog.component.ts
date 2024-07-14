@@ -24,21 +24,21 @@ export class EventDialogComponent implements OnChanges {
     });
   }
 
-  ngOnChanges(changes: SimpleChanges){
+  ngOnChanges(changes: SimpleChanges): void {
     if (changes['eventData']) {
-      this.eventForm.patchValue(this.eventData);
+      this.eventForm.patchValue(this.eventData || { title: '', date: '', venue: '' });
     }
   }
 
-  onSave(){
+  onSave(): void {
     this.saveEvent.emit(this.eventForm.value);
   }
 
-  onDelete(){
+  onDelete(): void {
     this.deleteEvent.emit();
   }
 
-  onCancel() {
+  onCancel(): void {
     this.cancelEvent.emit();
   }
 }

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface Exhibition {
-  id: string;
+  id?: string;
   title: string;
   date: string;
   venue: string;

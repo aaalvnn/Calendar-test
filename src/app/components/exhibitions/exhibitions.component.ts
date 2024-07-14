@@ -9,9 +9,11 @@ import { ExhibitionService, Exhibition } from '../../services/exhibition.service
   styleUrls: ['./exhibitions.component.scss'],
 })
 export class ExhibitionsComponent implements OnInit {
+  title = 'Calendar-test';
   showModal = false;
   showDeleteModal = false;
   selectedEvent: Partial<Exhibition> = {};
+  selectedVenue: string | null = null;
 
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
@@ -23,7 +25,7 @@ export class ExhibitionsComponent implements OnInit {
     },
     customButtons: {
       addEventButton: {
-        text: 'Створити',
+        text: 'Add Event',
         click: this.openAddEventDialog.bind(this)
       }
     },
@@ -38,21 +40,19 @@ export class ExhibitionsComponent implements OnInit {
   }
 
   loadExhibitions(): void {
+    if (!this.selectedVenue) return;
     this.exhibitionService.getExhibitions().subscribe((data: Exhibition[]) => {
-      this.calendarOptions = {
-        ...this.calendarOptions,
-        events: data.map(exhibition => ({
-          id: exhibition.id,
-          title: exhibition.title,
-          date: exhibition.date,
-          description: exhibition.venue
-        }))
-      };
+      this.calendarOptions.events = data.filter(exhibition => exhibition.venue === this.selectedVenue).map(exhibition => ({
+        id: exhibition.id,
+        title: exhibition.title,
+        date: exhibition.date,
+        description: exhibition.venue
+      }));
     });
   }
 
   openAddEventDialog(): void {
-    this.selectedEvent = {};
+    this.selectedEvent = { title: '', date: '', venue: this.selectedVenue || '' };
     this.showModal = true;
   }
 
@@ -105,5 +105,10 @@ export class ExhibitionsComponent implements OnInit {
   onCancelEvent(): void {
     this.showModal = false;
     this.showDeleteModal = false;
+  }
+
+  onVenueChanged(venueId: string): void {
+    this.selectedVenue = venueId;
+    this.loadExhibitions();
   }
 }

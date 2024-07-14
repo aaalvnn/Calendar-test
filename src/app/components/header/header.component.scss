@@ -1,3 +1,17 @@
-.container {
-
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.text-orange-400 {
+  color: #fb923c;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
