@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
-  title = 'Calendar-test';
 }

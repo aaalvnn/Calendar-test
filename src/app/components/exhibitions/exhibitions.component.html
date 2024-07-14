@@ -1,4 +1,22 @@
+<full-calendar [options]="calendarOptions"></full-calendar>
 
-<div>
-  <full-calendar [options]="calendarOptions"></full-calendar>
+<app-event-dialog
+  *ngIf="showModal"
+  [eventData]="selectedEvent"
+  (saveEvent)="onSaveEvent($event)"
+  (deleteEvent)="onDeleteEvent()"
+  (cancelEvent)="onCancelEvent()"
+></app-event-dialog>
+
+<div *ngIf="showDeleteModal" class="modal-overlay">
+  <div class="modal-content">
+    <h2 class="modal-title">Видалити Виставку</h2>
+    <div class="modal-body">
+      <p>Ви дійсно хочете видалити цей запис</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" (click)="onCancelEvent()">Відмінити</button>
+      <button type="button" (click)="onConfirmDelete()">Видалити</button>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,46 @@
+{
+  "exhibitions": [
+    {
+      "id": "2",
+      "title": "Виставка 2dsds",
+      "date": "2024-07-18",
+      "venue": "Галерея 2 fjdjfdkl;ds"
+    },
+    {
+      "id": "313b",
+      "title": "Виставка 1sdsds",
+      "date": "2024-07-01",
+      "venue": "Галерея 1"
+    },
+    {
+      "id": "",
+      "title": "fdfgdfs",
+      "date": "2024-07-10",
+      "venue": ""
+    },
+    {
+      "id": "",
+      "title": "fdfgdfs",
+      "date": "2024-07-10",
+      "venue": ""
+    },
+    {
+      "id": "",
+      "title": "fdfgdfs",
+      "date": "2024-07-20",
+      "venue": ""
+    },
+    {
+      "id": "",
+      "title": "fdfgdfs",
+      "date": "2024-08-20",
+      "venue": ""
+    },
+    {
+      "id": "",
+      "title": "fdfgdfs",
+      "date": "2024-12-18",
+      "venue": ""
+    }
+  ]
+}

@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './right-bar.component.scss'
 })
 export class RightBarComponent {
-  title = 'Calendar-test';
 
 }
