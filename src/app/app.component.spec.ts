@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'untitled4'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('untitled4');
+    expect(app.title).toEqual('Calendar-test');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, untitled4');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Calendar-test');
   });
 });
